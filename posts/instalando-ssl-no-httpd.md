@@ -1,7 +1,8 @@
----
-  layout: post
-  title: "Instalando SSL no httpd"
----
++++
+details:
+    layout: post
+    title: "Instalando SSL no httpd"
++++
 
 ### Instalando SSL no httpd
 
