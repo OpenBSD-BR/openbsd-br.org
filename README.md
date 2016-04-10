@@ -29,3 +29,7 @@ PHP dependencies to run the project.
 `php -S localhost:8000`
 
 Now, just open your browser and see the result at: http://localhost:8000
+
+
+
+[![Deployment status from DeployBot](https://ggrigon.deploybot.com/badge/66802254090711/64144.svg)](http://deploybot.com)
