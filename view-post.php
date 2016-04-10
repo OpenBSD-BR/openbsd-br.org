@@ -5,6 +5,9 @@ require ("vendor/autoload.php");
 use \Michelf\MarkdownExtra;
 use Symfony\Component\Yaml\Yaml;
 
+require("header.php");
+require("menu.php");
+
 $post = $_GET['post'];
 
 $trueFile = false;
@@ -20,6 +23,11 @@ if (true === $trueFile) {
     $reContent = "/\\+{3}.*?\\+{3}(.*?)$/s"; 
     preg_match($reContent, $fileContent, $matchesContent);
     $html = MarkdownExtra::defaultTransform($matchesContent[1]);
+
+
+    printf("<hr /> <h3><a href=\"posts.php\">Artigos</a></h3> %s", PHP_EOL);
     echo $html;
 }
+
+require("footer.php");
 

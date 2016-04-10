@@ -5,6 +5,9 @@ require ("vendor/autoload.php");
 use \Michelf\MarkdownExtra;
 use Symfony\Component\Yaml\Yaml;
 
+require("header.php");
+require("menu.php");
+
 foreach (glob("posts/*.md") as $file) {
     $fileContent = file_get_contents($file);
 
@@ -16,10 +19,14 @@ foreach (glob("posts/*.md") as $file) {
     $reContent = "/\\+{3}.*?\\+{3}(.*?)$/s"; 
     preg_match($reContent, $fileContent, $matchesContent);
 
+
+    printf("<hr /> <h3>Artigos</h3> %s", PHP_EOL);
+
     printf("<p><a href='view-post.php?post=%s'>%s</a></p> %s",
         str_replace('.md', '', str_replace('posts/', '', $file)),
         $header['details']['title'],
         PHP_EOL
     );
 }
+require("footer.php");
 
