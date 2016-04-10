@@ -32,4 +32,7 @@ Now, just open your browser and see the result at: http://localhost:8000
 
 
 
+
+
+Deploy status:
 [![Deployment status from DeployBot](https://ggrigon.deploybot.com/badge/66802254090711/64144.svg)](http://deploybot.com)
