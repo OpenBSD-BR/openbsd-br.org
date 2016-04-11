@@ -8,7 +8,7 @@ details:
 
 ---
 
-Este guia serve para você configurar a rede do seu OpenBSD, instalado em um ESXi dentro da OVH.
+Este guia serve para você configurar a rede do seu OpenBSD, instalado em um ESXi dentro da OVH. (serve também para as linhas de servidores da SYS (soyoustart) e KS (kimsufi).
 
 Você precisa ter em mãos os seguintes dados:
 
@@ -34,5 +34,28 @@ cat /etc/mygate
 IP.PRINCIPAL.TERMINADO.EM.254
 ```
 
-[OpenBSD-BR](http://www.openbsd-br.org)
+Para o IPV6 é necessário que você tenha em mãos a range de ips da sua máquina.
+Em servidores da OVH você consegue obter essa informação em: 
+http://ovh.com/manager/web/login/ depois clique em Dedicado e escolha o nome do seu servidor. 
+Você encontrará a seguinte tela: 
+
+![OVH](/img/ovh-ips.png)
+
+Deverá ser adicionado um IPV6 no arquivo /etc/hostname.em0 da seguinte forma
+
+````
+inet6 2607:41d0:2:6557::1/64
+inet6 autoconf
 ```
+A segunda linha com autoconf é responsável por receber o gateway padrão do ipv6.
+
+Para testar a sua configuração sem a necessidade de reboot, você pode executar:
+```
+sh /etc/netstart
+```
+
+Que reinicia apenas as interfaces de rede.
+
+
+[OpenBSD-BR](http://www.openbsd-br.org)
+
