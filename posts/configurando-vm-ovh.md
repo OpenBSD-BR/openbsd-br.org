@@ -43,7 +43,7 @@ Você encontrará a seguinte tela:
 
 Deverá ser adicionado um IPV6 no arquivo /etc/hostname.em0 da seguinte forma
 
-````
+```
 inet6 2607:41d0:2:6557::1/64
 inet6 autoconf
 ```
