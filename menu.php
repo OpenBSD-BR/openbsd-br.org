@@ -8,7 +8,7 @@
             <li role="presentation"><a href="http://openbsd-br.org/mailman/listinfo/lista">Lista</a></li>
             <li role="presentation"><a href="http://webchat.freenode.net?randomnick=1&channels=%23openbsd-br&uio=d4" target="_blank">IRC</a></li>
             <li role="presentation"><a href="posts.php">Artigos</a></li>
-            <li role="presentation"><a href="/faq">FAQ</a></li>
+            <li role="presentation"><a href="/faq/">FAQ</a></li>
             <li role="presentation"><a href="http://openbsd.org" target="_blank">Site Oficial</a></li>
           </ul>
         </nav>
