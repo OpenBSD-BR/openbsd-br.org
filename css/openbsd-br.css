@@ -2,6 +2,32 @@
  * openbsd-br.org
  */
 
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+
+body {
+    padding-bottom: 0;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 300;
+    letter-spacing: -.02em;
+}
+
 .div-download p {
     padding: 30px;
+}
+
+.footer-div {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: #fff;
+    background: #000;
+    width: 100%;
+}
+
+.brazil-line {
+    border-top: 3px solid #5cb85c;
+    border-bottom: 3px solid #ffff00;
+    height: 1px;
+    width: 100%;
 }
