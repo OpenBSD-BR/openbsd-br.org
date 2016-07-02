@@ -5,14 +5,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 
 body {
+    padding-top: 0;
     padding-bottom: 0;
     font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.6;
     font-weight: 300;
     letter-spacing: -.02em;
+    background-color: #F2F2F2;
 }
 
+.container {
+    padding-top: 30px;
+    background-color: #ffffff;
+}
 .div-download p {
     padding: 30px;
 }
@@ -31,3 +37,11 @@ body {
     height: 1px;
     width: 100%;
 }
+
+#top-black {
+    padding-top: 30px;
+    color: #fff;
+    background: #000;
+    width: 100%;
+}
+
