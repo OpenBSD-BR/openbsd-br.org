@@ -39,9 +39,27 @@ body {
 }
 
 #top-black {
-    padding-top: 30px;
     color: #fff;
     background: #000;
     width: 100%;
 }
 
+#openbsd-br-social-icons {
+    padding-top: 0;
+    background-color: #000;
+    text-align: right;
+}
+
+#footer-container {
+    color: #fff;
+    background: #000;
+}
+
+.menu-fixed-style {
+    background-color: #fff;
+    padding: 15px;
+    border-top: 3px solid #5cb85c;
+    border-bottom: 3px solid #ffff00;
+    width: 1170px;
+    margin: auto;
+}
