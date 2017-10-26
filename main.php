@@ -24,6 +24,9 @@
                  <a class="btn-lg btn-success" href="ftp://ftp.openbsd-br.org/pub/OpenBSD" role="button">C3SL</a>
                  <a class="btn-lg btn-success" href="ftp://ftp2.openbsd-br.org/pub/OpenBSD" role="button">UNB</a>
                  <a class="btn-lg btn-success" href="ftp://ftp3.openbsd-br.org/pub/OpenBSD" role="button">UFSC</a>
+
+                 <a class="btn-lg btn-info" href="https://fastly.cdn.openbsd.org/pub/OpenBSD" role="button">Faslty (CDN)</a>
+                 <a class="btn-lg btn-info" href="https://mirror.leaseweb.com/pub/OpenBSD" role="button">LeaseWeb (CDN)</a>
              </p>
              <br />
              <p class="text-center">
