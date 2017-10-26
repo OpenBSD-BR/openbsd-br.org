@@ -63,3 +63,10 @@ body {
     width: 1170px;
     margin: auto;
 }
+
+.twitter-div-top-left {
+    width: 300px;
+    float: left;
+    padding-top: 9px;
+}
+

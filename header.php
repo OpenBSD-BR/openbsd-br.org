@@ -10,7 +10,7 @@
     <link rel="canonical" href="http://www.openbsd-br.org">
 
     <title>OpenBSD-BR.org (Grupo Brasileiro dos Usu&aacute;rios de OpenBSD)</title>
-    
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
@@ -34,7 +34,13 @@
      </a>
 
   <div class="container-fluid" id="top-black">
-    <?php include('social-icons.php'); ?>
+    <div class="twitter-div-top-left">
+        <a href="https://twitter.com/openbsd_br" class="twitter-follow-button" data-show-count="true" data-size="large" data-dnt="true">
+          Seguir @openbsd_br
+        </a>
+    </div>
+
+        <?php include('social-icons.php'); ?>
   </div>
 
     <div class="brazil-line"></div>
