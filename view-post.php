@@ -17,10 +17,10 @@ foreach (glob("posts/*.md") as $file) {
     }
 }
 
-if (true === $trueFile) { 
+if (true === $trueFile) {
     $postFile = __DIR__. '/posts/' .$post. '.md';
     $fileContent = file_get_contents($postFile);
-    $reContent = "/\\+{3}.*?\\+{3}(.*?)$/s"; 
+    $reContent = "/\\+{3}.*?\\+{3}(.*?)$/s";
     preg_match($reContent, $fileContent, $matchesContent);
     $html = MarkdownExtra::defaultTransform($matchesContent[1]);
 
