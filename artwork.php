@@ -15,7 +15,7 @@ preg_match($reContent, $fileContent, $matchesContent);
 $html = MarkdownExtra::defaultTransform($matchesContent[1]);
 
 
-printf("<hr /> <h3>Artwork</h3>");
+//printf("<hr /> <h3>Artwork</h3>");
 echo $html;
 
 require("footer.php");
