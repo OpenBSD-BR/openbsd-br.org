@@ -11,7 +11,6 @@ Wanna chat with us?
 
 `irc.freenode.net` `#openbsd-br`
 
--
 
 #### Configuring Website:
 
