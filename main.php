@@ -1,7 +1,7 @@
 
     <div id="content">
         <div class="text-center" style="margin-bottom: 20px;">
-            <img src="img/puffy65.gif" alt="Versao estavel 6.5" />
+            <img src="img/puffy66.gif" alt="Versão estável 6.6" />
         </div>
 
         <div class="jumbotron">
