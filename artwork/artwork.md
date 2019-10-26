@@ -16,6 +16,16 @@ details:
             </a>
         </td>
     </tr>
+
+    <tr>
+        <td>Versão 6.6</td>
+        <td>
+            <a href="http://www.openbsd.org/images/sixdotsix.gif">
+                <img src="/artwork/sixdotsix.gif" align="left" height="100" width="100" >
+            </a>
+        </td>
+    </tr>
+
     <tr>
         <td>Versão 6.4</td>
         <td>
