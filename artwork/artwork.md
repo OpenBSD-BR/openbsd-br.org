@@ -16,7 +16,14 @@ details:
             </a>
         </td>
     </tr>
-
+    <tr>
+        <td>Versão 6.8</td>
+        <td>
+            <a href="https://www.openbsd.org/images/PuffyOverride.png">
+                <img src="/artwork/puffyOverride-68.png" align="left" height="100" width="100" >
+            </a>
+        </td>
+    </tr>
     <tr>
         <td>Versão 6.6</td>
         <td>
@@ -25,7 +32,14 @@ details:
             </a>
         </td>
     </tr>
-
+        <tr>
+        <td>Versão 6.5</td>
+        <td>
+            <a href="https://www.openbsd.org/images/Puffystock.gif">
+                <img src="/artwork/puffystock-65.gif" align="left" height="100" width="100" >
+            </a>
+        </td>
+    </tr>
     <tr>
         <td>Versão 6.4</td>
         <td>
