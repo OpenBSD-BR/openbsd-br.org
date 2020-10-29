@@ -7,7 +7,16 @@
         <div class="jumbotron">
             <p class="text-justify">O Projeto OpenBSD oferece, como carro chefe, um sistema operacional multi-plataforma, gratuito e de c&oacute;digo aberto baseado no BSD Unix, da Universidade de Berkeley.</p>
             <p class="text-justify">A primeira vers&atilde;o do sistema operacional OpenBSD data do inicio do ano de 1995 e iniciou como um fork do NetBSD; outro sistema operacional da mesma linhagem do Unix de Berkeley. Dentre alguns dos esfor&ccedil;os desempenhados pelo projeto, vemos seguran&ccedil;a, simplicidade e portabilidade.</p>
-            <p class="text-justify">Outros projetos tamb&eacute;m s&atilde;o hospedados e mantidos pelos desenvolvedores do OpenBSD. Alguns desses projetos s&atilde;o: LibreSSL, OpenSSH, OpenBGPd e OpenNTPd.</p>
+            <p class="text-justify">Outros projetos tamb&eacute;m s&atilde;o hospedados e mantidos pelos desenvolvedores do OpenBSD:
+              <a href="https://www.openssh.com" target="_blank">OpenSSH</a>,
+              <a href="http://www.openbgpd.org" target="_blank">OpenBGPD</a>,
+              <a href="https://www.rpki-client.org" target="_blank">rpki-client</a>,
+              <a href="http://www.openntpd.org" target="_blank">OpenNTPD</a>,
+              <a href="https://www.opensmtpd.org" target="_blank">OpenSMTPD</a>,
+              <a href="https://www.openiked.org" target="_blank">OpenIKED</a>,
+              <a href="https://mandoc.bsd.lv" target="_blank">mandoc</a>,
+              <a href="https://www.libressl.org" target="_blank">LibreSSL</a>
+            </p>
         </div>
 
         <div class="row">
