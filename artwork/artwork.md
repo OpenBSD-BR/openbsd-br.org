@@ -25,6 +25,14 @@ details:
         </td>
     </tr>
     <tr>
+        <td>Versão 6.7</td>
+        <td>
+            <a href="http://www.openbsd.org/images/CoralFever.gif">
+                <img src="/artwork/CoralFever-67.gif" align="left" height="100" width="100" >
+            </a>
+        </td>
+    </tr>
+    <tr>
         <td>Versão 6.6</td>
         <td>
             <a href="http://www.openbsd.org/images/sixdotsix.gif">
