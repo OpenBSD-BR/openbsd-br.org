@@ -28,5 +28,5 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           rsync -avz --exclude='.git/' --exclude='.github' -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete . deploybot@46.105.133.17:/var/www/openbsd-br-org/
-          ssh deploybot@46.105.133.17 "cd /var/www/openbsd-br-org; php-7.4 -r \"readfile('https://getcomposer.org/installer');\" > composer-setup.php; php composer-setup.php; php-7.4 -r \"unlink('composer-setup.php');\"; php-7.4 composer.phar install"
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null deploybot@46.105.133.17 "cd /var/www/openbsd-br-org; php-7.4 -r \"readfile('https://getcomposer.org/installer');\" > composer-setup.php; php composer-setup.php; php-7.4 -r \"unlink('composer-setup.php');\"; php-7.4 composer.phar install"
   
