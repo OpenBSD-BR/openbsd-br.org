@@ -16,7 +16,6 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          apt-get update && apt-get install -y rsync openssh-client
           mkdir -p ~/.ssh
           echo "${{ secrets.SSH_PRIVATE_KEY }}" >> ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
@@ -26,7 +25,7 @@ jobs:
           ssh-keyscan 46.105.133.17 >> ~/.ssh/known_hosts
           ssh-keygen -R 46.105.133.17
 
-      - name: Some task that fetches dependencies
+      - name: run rsync
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
