@@ -20,10 +20,10 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+          ssh-keygen -R 46.105.133.17
 
       - name: Some task that fetches dependencies
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          ssh-add -l
           rsync -avz --delete openbsd-br.org/ deploybot@46.105.133.17:/var/www/openbsd-br.org/
