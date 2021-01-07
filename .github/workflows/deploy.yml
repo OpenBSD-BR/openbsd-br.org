@@ -29,5 +29,4 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          ls -alhrt
-          rsync -avz -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete "openbsd-br-org" deploybot@46.105.133.17:/var/www/openbsd-br-org/
+          rsync -avz -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete . deploybot@46.105.133.17:/var/www/openbsd-br-org/public/
