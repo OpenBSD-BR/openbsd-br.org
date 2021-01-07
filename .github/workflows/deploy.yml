@@ -25,7 +25,7 @@ jobs:
 
       - name: install php and run composer
         run: |
-          apt-get install -y php
+          sudo apt-get install -y php
           php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
           php composer-setup.php
           php -r "unlink('composer-setup.php');"
