@@ -9,7 +9,9 @@ please fork it and submit a pull request.
 
 Wanna chat with us?
 
-`irc.freenode.net` `#openbsd-br`
+```
+irc.freenode.net  #openbsd-br
+```
 
 
 #### Configuring Website:
@@ -17,18 +19,13 @@ Wanna chat with us?
 To install the website on your computer, you will need PHP and Composer. Composer will install some 
 PHP dependencies to run the project.
 
-`php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php`
+```bash
+php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+php composer.phar install
 
-`php composer-setup.php`
-
-`php -r "unlink('composer-setup.php');"`
-
-`php composer.phar install`
-
-`php -S localhost:8000`
+php -S localhost:8000
+```
 
 Now, just open your browser and see the result at: http://localhost:8000
-
-
-
-[![Deployment status from DeployBot](https://ggrigon.deploybot.com/badge/66802254090711/64144.svg)](http://deploybot.com)
