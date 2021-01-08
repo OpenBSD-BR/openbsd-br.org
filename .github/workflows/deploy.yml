@@ -20,8 +20,8 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
-          ssh-keyscan 46.105.133.17 >> ~/.ssh/known_hosts
-          ssh-keygen -R 46.105.133.17
+          ssh-keyscan "${{ secrets.REMOTE_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keygen -R "${{ secrets.REMOTE_HOST }}"
 
       - name: install php and run composer
         run: |
@@ -35,4 +35,4 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          rsync -avz --exclude='.git/' --exclude='.github' -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete . deploybot@46.105.133.17:/var/www/openbsd-br-org/
+          rsync -avz --exclude='.git/' --exclude='.github' -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete . ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/var/www/openbsd-br-org/
