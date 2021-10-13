@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: ssh setup
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.SSH_PRIVATE_KEY }}"
+          ssh-keyscan "${{ secrets.REMOTE_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keygen -R "${{ secrets.REMOTE_HOST }}"
+
+      - name: install php and run composer
+        run: |
+          sudo apt-get install -y php
+          php -r "readfile('https://getcomposer.org/installer');" > composer-setup.php
+          php composer-setup.php
+          php -r "unlink('composer-setup.php');"
+          php composer.phar install
+  
+      - name: run rsync
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          rsync -avz --exclude='.git/' --exclude='.github' -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete . ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:/var/www/openbsd-br-org/
