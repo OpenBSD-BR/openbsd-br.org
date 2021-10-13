@@ -17,6 +17,11 @@ details:
         </td>
     </tr>
     <tr>
+        <td>Versão 6.9<br>
+            <a href="https://www.openbsd.org/images/nice.png">
+                <img src="/artwork/nice-69.png" align="left" height="100" width="100" >
+            </a>
+        </td>
         <td>Versão 6.8<br>
             <a href="https://www.openbsd.org/images/PuffyOverride.png">
                 <img src="/artwork/puffyOverride-68.png" align="left" height="100" width="100" >
