@@ -17,6 +17,11 @@ details:
         </td>
     </tr>
     <tr>
+        <td>Versão 7.0<br>
+            <a href="http://www.openbsd.org/images/StarryPointers.png">
+                <img src="/artwork/70_StarryPointers-s.png" align="left" height="100" width="100" >
+            </a>
+        </td>
         <td>Versão 6.9<br>
             <a href="https://www.openbsd.org/images/nice.png">
                 <img src="/artwork/nice-69.png" align="left" height="100" width="100" >
