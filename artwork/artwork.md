@@ -17,6 +17,11 @@ details:
         </td>
     </tr>
     <tr>
+        <td>Versão 7.1<br>
+            <a href="https://www.openbsd.org/images/TheGreatWaveOffCalgary.png">
+                <img src="https://www.openbsd.org/images/TheGreatWaveOffCalgary-s.gif" align="left" height="100" width="100" >
+            </a>
+        </td>
         <td>Versão 7.0<br>
             <a href="http://www.openbsd.org/images/StarryPointers.png">
                 <img src="/artwork/70_StarryPointers-s.png" align="left" height="100" width="100" >
